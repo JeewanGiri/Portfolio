@@ -1,0 +1,55 @@
+.project{
+    padding-top: 10vh;
+    background: #c2c9c1;
+    width: 100%;
+    color: white;
+    height: 100vh;
+    background: #444343;
+    background-image: url(../assets/city.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    .heading{
+        padding-left:10vh;
+        padding-top: 3vh;
+        h1{
+            font-size: 8vh;
+        }
+    }
+    .icons{
+        gap: 40px;
+        background-color: transparent;
+        .figure{
+            padding-left: 80px;
+            padding-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            img{
+                height: 20vh;
+                width: 20vh;
+                border-radius: 50%;
+                margin: 50px;
+                box-shadow: 0 0 5px rgb(224, 202, 5);
+                color: red;
+            }
+         
+        }
+        .title{
+            display: flex; 
+            gap: 140px;  
+            padding-left: 90px;
+            h3{
+                font-size: 29px;
+            } 
+        }
+    }
+}
+@media screen and (max-width: 800px){
+.project{
+    height: fit-content;
+    .icons{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}    
+}

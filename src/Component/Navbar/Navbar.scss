@@ -1,0 +1,38 @@
+.left{
+    display: flex;
+    gap: 10px;
+    font-size: large;
+    font-family:Impact sans-serif;
+    padding-top: 10px;
+    h4{
+        padding: 5px;
+    }
+
+}
+.right{
+    display: flex;
+    gap: 20px;
+    font-size: large;
+    font-family: sans-serif;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+ul{
+    display: flex;
+    gap: 30px;
+    li{
+        padding: 8px;
+        list-style-type: none;
+        text-decoration-style: none;
+        text-decoration: none;
+        a{
+            text-decoration: none;
+            text-decoration-style: none;
+            color: black;
+            font-size: 23px;
+            font-family:Impact sans-serif;
+            font-weight: 400;
+        }
+    }
+}
+

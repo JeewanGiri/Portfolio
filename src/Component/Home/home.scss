@@ -1,0 +1,120 @@
+.main-div{
+     .top-part{
+        // background-color: #9688bd;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 999;
+        padding-left: 20px;
+        width: 100vw;
+        // box-shadow: 0 0 5px darkslategrey;
+        .left{
+            display: flex;
+            gap: 10px;
+            font-size: large;
+            font-family:Impact sans-serif;
+            padding-top: 19px;
+            h4{
+                padding: 5px;
+            }
+
+        }
+        .right{
+            display: flex;
+            gap: 20px;
+            font-size: large;
+            font-family: sans-serif;
+            padding-top: 20px;
+            padding-right: 20px;
+        }
+        ul{
+            display: flex;
+            gap: 30px;
+            li{
+                padding: 8px;
+                list-style-type: none;
+                text-decoration-style: none;
+                text-decoration: none;
+                cursor: pointer;
+                a{
+                    text-decoration: none;
+                    text-decoration-style: none;
+                    color: black;
+                    font-size: 23px;
+                    font-family:Impact sans-serif;
+                    font-weight: 400;
+                }
+            }
+        }
+     }
+    }
+     .down-part{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        // background: rgb(151, 147, 147);
+        .word{
+            color: black;
+            display: flex;
+            padding: 200px 0px 0px 100px;
+            width: 150vh;
+            justify-content: space-between;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      .words{
+       h1{
+        font-size: 50px;
+       }
+            span{
+            color: #04690c;
+        }
+        }
+      }
+        .secondimg{
+            
+            img{
+                height: 60vh;
+                width: 50vh;
+                border-radius: 50% 0 50% 0;
+            }
+        }
+     }
+@media screen and (max-width: 800px) {
+    .main-div .top-part {
+        align-items: center;
+        position: relative;
+        z-index: -1;
+        flex-direction: column;
+        .right {
+            padding-right: 0; 
+            ul {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+        }
+    }
+  
+    .down-part {
+        .word{
+            width: 350px;
+            padding-top: 200px;
+            h1{
+                font-size: 2rem;
+            }
+        
+        }
+        .firstimg{
+        }
+        
+        .secondimg {
+            max-width: 200vh;
+            img {
+                max-height: fit-content;
+                max-width: 40vh; 
+               position: absolute;
+               top: 48%;
+               left: 36%;
+            }
+        }
+    }
+}

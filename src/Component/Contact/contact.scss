@@ -1,0 +1,44 @@
+.contact-form{
+        height: 100vh;
+    .w-left{
+        .awesome{
+            padding-left: 20px;
+            padding-top: 15vh;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+    }
+    .c-right{
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            input{
+                background: white;
+                width: 40vw;
+                height: 30px;
+                border-radius: 10px;
+                padding: 10px;
+                color: black;
+            }
+            textarea{
+                color: black;
+                background: white;
+                width: 40vw;
+                height: 30vh;
+                border-radius: 10px;
+                padding: 10px;
+
+            }
+            .button{
+                height: 40px;
+                width: 150px;
+                padding: 10px;
+                background: #216104;
+                cursor: pointer;
+            }
+        }
+    }
+}
