@@ -1,6 +1,5 @@
 import './home.scss'
 import Profile from '../assets/picture.jpeg'
-import Map from '../assets/map.jpg'
 import { Link } from 'react-scroll'
 import {motion} from 'framer-motion'
 import { useEffect, useState } from 'react'
@@ -64,36 +63,24 @@ const tick=()=>{
         </div>
     </motion.div>
 </div>
- <motion.div className='down-part' 
-  initial={{opacity:0}}
-    animate={{opacity:1}}
-    transition={{delay:0.4,duration:1.5}}
- >
-      <div className='word'>
-      <div className='words'>
-        <motion.h1 
-        initial={{opacity:0,y:-50}}
-        animate={{opacity:1,y:0}}
-        transition={{delay:1,duration:2}}
-         >HI, I AM <br/><span>{text}</span></motion.h1>
-        <motion.h5 
-         initial={{opacity:0,y:-100}}
-        animate={{opacity:1,y:0}}
-        transition={{delay:1,duration:2}}
-        >I am responsible for the design and implementation of user 
-        interfaces (UIs) and UI components using React, a front-end JavaScript library.</motion.h5>
+ <div className="homepage">
+      <div className="top">
+      <h1>HI, I AM <br/><span>{text}</span></h1>
+        <h5><i>I am responsible for the design and implementation of user 
+        interfaces (UIs) and UI components using React, a front-end JavaScript library.</i></h5>
+        <div className="btn">
+        <div className="btn1">
+        <button>Hire Me</button>
+        </div>
+        <div className="btn2">
+        <button>Download CV</button>
+        </div>
+        </div>
       </div>
-      <div  className='secondimg'>
-      <motion.img src={Profile} alt='profile'
-       initial={{opacity:0,rotat:100}}
-        animate={{opacity:1,y:0}}
-        transition={{delay:0.5,duration:1.5}}
-       />
+      <div className="image">
+        <img src="/public/pp.png" alt="pp"/>
       </div>
-      </div>
-
-    </motion.div>
-   
+    </div>
 </>
   )
 }

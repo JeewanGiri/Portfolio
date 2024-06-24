@@ -1,7 +1,7 @@
 .about{
     background: #bfbece;
-    width: 100vw;
-    height: 100vh;
+    width: 99vw;
+    height: auto;
     color:black ;
     font-family:Impact sans-serif;
     padding-top: 20px;
@@ -63,7 +63,7 @@
     gap: 5rem;
     height: 30vh;
     margin-top: 4rem;
-    margin-bottom: 5rem;
+    padding-bottom: 60px;
 }
 .achievement{
     display: flex;
@@ -102,18 +102,9 @@
 @media (max-width: 710px) {
     .about{
           height: fit-content;
-        .container {
+        .container{
+            display: flex;
             flex-direction: column;
-          .cont{
-            padding: 2vh;
-          }
     }
-
     }
   }
-@media screen and (max-width:480px) {
-    .experience{
-        transform: scale(0.8);
-        gap:50px;
-    }
-}
